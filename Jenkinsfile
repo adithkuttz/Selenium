@@ -15,13 +15,13 @@ pipeline {
         stage('Check Java and Maven') {
             steps {
                 bat 'java -version'
-                bat '"C:\\tool\\apache-maven-3.9.16\\bin\\mvn.cmd" -version'
+                bat '"D:\\Tool\\apache-maven-3.9.16\\bin\\mvn.cmd" -version'
             }
         }
 
         stage('Run Selenium TestNG Tests') {
             steps {
-                bat '"D:\Tool\apache-maven-3.10.0\bin" -B clean test'
+                bat '"D:\\Tool\\apache-maven-3.10.0\\bin\\mvn.cmd" -B clean test'
             }
         }
     }
